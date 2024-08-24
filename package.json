@@ -1,6 +1,6 @@
 {
   "name": "io.github.noridev.light-limit-changer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "baseVersion": "1.13.2",
   "unity": "2019.4",
   "displayName": "NoriDev - LightLimitChanger",
