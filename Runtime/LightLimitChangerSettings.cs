@@ -2,7 +2,7 @@
 using UnityEngine;
 using VRC.SDKBase;
 
-namespace io.github.azukimochi
+namespace io.github.noridev
 {
     [DisallowMultipleComponent]
     [AddComponentMenu("Modular Avatar/Light Limit Changer")]

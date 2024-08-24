@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-namespace io.github.azukimochi
+namespace io.github.noridev
 {
     [CustomPropertyDrawer(typeof(TargetShaders))]
     internal sealed class TargetShadersEditor : PropertyDrawer

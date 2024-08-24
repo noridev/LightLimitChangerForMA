@@ -2,7 +2,7 @@
 // Copyright (c) 2022 anatawa12
 
 using System;
-using io.github.azukimochi;
+using io.github.noridev;
 using nadena.dev.ndmf;
 using UnityEditor;
 using UnityEditor.Animations;

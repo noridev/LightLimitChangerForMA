@@ -1,14 +1,14 @@
-﻿using io.github.azukimochi;
+﻿using io.github.noridev;
 using nadena.dev.ndmf;
 using UnityEngine;
 
 [assembly: ExportsPlugin(typeof(PluginDefinition))]
 
-namespace io.github.azukimochi
+namespace io.github.noridev
 {
     internal sealed class PluginDefinition : Plugin<PluginDefinition>
     {
-        public override string QualifiedName => "io.github.azukimochi.light-limit-changer";
+        public override string QualifiedName => "io.github.noridev.light-limit-changer";
         
         public override string DisplayName => "LightLimitChanger";
 

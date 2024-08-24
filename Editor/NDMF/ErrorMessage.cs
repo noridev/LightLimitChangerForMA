@@ -4,7 +4,7 @@ using nadena.dev.ndmf;
 using nadena.dev.ndmf.localization;
 using UnityEngine;
 
-namespace io.github.azukimochi
+namespace io.github.noridev
 
 {
     public class ErrorMessage : SimpleError

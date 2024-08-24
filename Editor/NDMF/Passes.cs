@@ -8,7 +8,7 @@ using UnityEditor.Animations;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace io.github.azukimochi
+namespace io.github.noridev
 {
     internal static partial class Passes
     {

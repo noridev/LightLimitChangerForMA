@@ -7,7 +7,7 @@ using UnityEditor.Animations;
 using UnityEngine;
 using VRC.SDK3.Avatars.Components;
 
-namespace io.github.azukimochi
+namespace io.github.noridev
 {
     partial class Passes
     {

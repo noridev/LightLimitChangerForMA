@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace io.github.azukimochi
+namespace io.github.noridev
 {
     public sealed class LilToonTextureBaker : TextureBaker
     {

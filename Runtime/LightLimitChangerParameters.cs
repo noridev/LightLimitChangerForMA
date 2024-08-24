@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace io.github.azukimochi
+namespace io.github.noridev
 {
     [Serializable]
     public class LightLimitChangerParameters

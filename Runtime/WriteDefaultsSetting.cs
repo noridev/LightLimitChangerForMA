@@ -1,4 +1,4 @@
-﻿namespace io.github.azukimochi
+﻿namespace io.github.noridev
 {
     public enum WriteDefaultsSetting
     {

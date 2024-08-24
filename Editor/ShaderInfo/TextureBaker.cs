@@ -3,7 +3,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-namespace io.github.azukimochi
+namespace io.github.noridev
 {
     public abstract class TextureBaker
     {

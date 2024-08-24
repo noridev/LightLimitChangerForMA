@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace io.github.azukimochi
+namespace io.github.noridev
 {
     [Flags]
     public enum LightLimitControlType : long

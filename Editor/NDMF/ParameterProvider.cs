@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using nadena.dev.ndmf;
 using UnityEngine;
 
-namespace io.github.azukimochi
+namespace io.github.noridev
 {
     [ParameterProviderFor(typeof(LightLimitChangerSettings))]
     internal sealed class ParameterProvider : IParameterProvider
