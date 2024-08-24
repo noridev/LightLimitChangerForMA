@@ -20,7 +20,8 @@ https://azukimochi.github.io/LLC-Docs/docs/howtouse/howtouse-basic/
 #### 更新履歴
 https://github.com/noridev/LightLimitChangerForMA/releases
 
-![image](https://github.com/noridev/LightLimitChangerForMA/assets/103747350/525c3023-59f5-4e5f-87bb-c7daeef8b7e8)
+![image](https://github.com/user-attachments/assets/3af66eb8-c771-42ae-97e4-44aebeea97b5)
+
 
 
 
