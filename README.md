@@ -12,7 +12,7 @@ MAで使用できるPrefab形式で生成するため、非破壊かつアバタ
 https://azukimochi.github.io/LLC-Docs/
 
 ### VCC向けリポジトリ
-https://noridev.github.io/vpm-repos/
+https://vpm.noridev.moe/
 
 #### 使い方
 https://azukimochi.github.io/LLC-Docs/docs/howtouse/howtouse-basic/
