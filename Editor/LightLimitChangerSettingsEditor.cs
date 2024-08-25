@@ -2,7 +2,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace io.github.noridev
+namespace moe.noridev
 {
     [CanEditMultipleObjects]
     [CustomEditor(typeof(LightLimitChangerSettings))]

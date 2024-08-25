@@ -4,7 +4,7 @@ using nadena.dev.ndmf;
 using nadena.dev.ndmf.localization;
 using UnityEngine;
 
-namespace io.github.noridev
+namespace moe.noridev
 
 {
     public class ErrorMessage : SimpleError

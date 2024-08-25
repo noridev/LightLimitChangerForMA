@@ -2,7 +2,7 @@
 using nadena.dev.ndmf;
 using UnityEngine;
 
-namespace io.github.noridev
+namespace moe.noridev
 {
     partial class Passes
     {

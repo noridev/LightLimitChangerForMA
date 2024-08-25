@@ -3,7 +3,7 @@ using UnityEditor;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace io.github.noridev
+namespace moe.noridev
 {
     public sealed class LightLimitChangerObjectCache
     {

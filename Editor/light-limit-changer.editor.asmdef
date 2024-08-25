@@ -1,9 +1,9 @@
 {
-    "name": "io.github.noridev.light-limit-changer.editor",
+    "name": "moe.noridev.light-limit-changer.editor",
     "rootNamespace": "",
     "references": [
         "nadena.dev.modular-avatar.core",
-        "io.github.noridev.light-limit-changer",
+        "moe.noridev.light-limit-changer",
         "nadena.dev.modular-avatar.core.editor",
         "nadena.dev.ndmf",
         "nadena.dev.ndmf.runtime",

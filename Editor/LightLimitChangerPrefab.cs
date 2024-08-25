@@ -5,17 +5,17 @@ using nadena.dev.ndmf.util;
 using UnityEditor;
 using UnityEngine;
 
-namespace io.github.noridev
+namespace moe.noridev
 {
     [InitializeOnLoad]
     internal static class LightLimitChangerPrefab
     {
-        private const string GeneratedPrefabGUIDKey = "io.github.noridev.LightLimitChanger.Prefab";
+        private const string GeneratedPrefabGUIDKey = "moe.noridev.LightLimitChanger.Prefab";
         private const string PrefabPath = "Assets/LightLimitChanger/Light Limit Changer.prefab";
 
-        private const string GlobalSettingsIDKey = "io.github.noridev.LightLimitChanger.GlobalSettings.ID.Global";
-        private const string GlobalSettingsLocalIDKey = "io.github.noridev.LightLimitChanger.GlobalSettings.ID.Local";
-        private const string GlobalSettingsValueKey = "io.github.noridev.LightLimitChanger.GlobalSettings.Value";
+        private const string GlobalSettingsIDKey = "moe.noridev.LightLimitChanger.GlobalSettings.ID.Global";
+        private const string GlobalSettingsLocalIDKey = "moe.noridev.LightLimitChanger.GlobalSettings.ID.Local";
+        private const string GlobalSettingsValueKey = "moe.noridev.LightLimitChanger.GlobalSettings.Value";
 
         static LightLimitChangerPrefab()
         {

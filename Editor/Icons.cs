@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-namespace io.github.noridev
+namespace moe.noridev
 {
     internal static class Icons
     {

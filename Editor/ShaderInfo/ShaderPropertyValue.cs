@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.Rendering;
 
-namespace io.github.noridev
+namespace moe.noridev
 {
     [StructLayout(LayoutKind.Explicit)]
 #pragma warning disable CS0660

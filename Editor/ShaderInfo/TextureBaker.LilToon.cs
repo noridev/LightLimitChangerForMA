@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace io.github.noridev
+namespace moe.noridev
 {
     public sealed class LilToonTextureBaker : TextureBaker
     {

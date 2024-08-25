@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-namespace io.github.noridev
+namespace moe.noridev
 {
     [CustomPropertyDrawer(typeof(TargetShaders))]
     internal sealed class TargetShadersEditor : PropertyDrawer

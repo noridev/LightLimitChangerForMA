@@ -1,4 +1,4 @@
-﻿namespace io.github.noridev
+﻿namespace moe.noridev
 {
     public enum WriteDefaultsSetting
     {

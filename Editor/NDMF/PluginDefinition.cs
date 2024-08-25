@@ -1,14 +1,14 @@
-﻿using io.github.noridev;
+﻿using moe.noridev;
 using nadena.dev.ndmf;
 using UnityEngine;
 
 [assembly: ExportsPlugin(typeof(PluginDefinition))]
 
-namespace io.github.noridev
+namespace moe.noridev
 {
     internal sealed class PluginDefinition : Plugin<PluginDefinition>
     {
-        public override string QualifiedName => "io.github.noridev.light-limit-changer";
+        public override string QualifiedName => "moe.noridev.light-limit-changer";
         
         public override string DisplayName => "LightLimitChanger";
 

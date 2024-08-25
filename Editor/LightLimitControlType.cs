@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace io.github.noridev
+namespace moe.noridev
 {
     [Flags]
     public enum LightLimitControlType : long

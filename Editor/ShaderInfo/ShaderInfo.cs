@@ -4,7 +4,7 @@ using System.Reflection;
 using UnityEditor;
 using UnityEngine;
 
-namespace io.github.noridev
+namespace moe.noridev
 {
     [InitializeOnLoad]
     internal abstract partial class ShaderInfo

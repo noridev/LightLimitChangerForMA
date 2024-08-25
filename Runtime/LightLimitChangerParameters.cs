@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace io.github.noridev
+namespace moe.noridev
 {
     [Serializable]
     public class LightLimitChangerParameters

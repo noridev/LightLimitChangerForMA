@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace io.github.noridev
+namespace moe.noridev
 {
     [Serializable]
     public struct TargetShaders

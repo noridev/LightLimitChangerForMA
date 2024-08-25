@@ -6,7 +6,7 @@ using nadena.dev.ndmf;
 using UnityEditor;
 using UnityEngine;
 
-namespace io.github.noridev
+namespace moe.noridev
 {
     internal static partial class Passes
     {

@@ -5,7 +5,7 @@ using UnityEditor;
 using UnityEngine;
 using VRC.SDK3.Avatars.Components;
 
-namespace io.github.noridev
+namespace moe.noridev
 {
     public static class LightLimitChanger
     {

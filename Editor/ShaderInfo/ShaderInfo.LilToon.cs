@@ -2,7 +2,7 @@
 using System.Linq;
 using UnityEngine;
 
-namespace io.github.noridev
+namespace moe.noridev
 {
     partial class ShaderInfo
     {
