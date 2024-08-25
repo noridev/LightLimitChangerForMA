@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &9213525711835462960
+--- !u!1 &8898774349419501940
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8442159124839926025}
-  - component: {fileID: 5369528776110213476}
-  - component: {fileID: 2992164003499654213}
+  - component: {fileID: 1080612965552510302}
+  - component: {fileID: 4783797640739835354}
+  - component: {fileID: 4319319904297035284}
   m_Layer: 0
   m_Name: Light Limit Changer
   m_TagString: Untagged
@@ -18,27 +18,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8442159124839926025
+--- !u!4 &1080612965552510302
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9213525711835462960}
+  m_GameObject: {fileID: 8898774349419501940}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5369528776110213476
+--- !u!114 &4783797640739835354
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9213525711835462960}
+  m_GameObject: {fileID: 8898774349419501940}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fed2c2f726bf4d4499e8722d13164f75, type: 3}
@@ -49,6 +50,8 @@ MonoBehaviour:
     IsValueSave: 0
     OverwriteDefaultLightMinMax: 1
     DefaultLightValue: 0.5
+    DefaultMinLightValue: 0
+    DefaultMaxLightValue: 1
     MaxLightValue: 1
     MinLightValue: 0
     TargetShader: 0
@@ -57,15 +60,29 @@ MonoBehaviour:
       Targets: []
     AllowColorTempControl: 0
     AllowSaturationControl: 0
+    AllowMonochromeControl: 0
     AllowUnlitControl: 0
+    AllowEmissionControl: 0
     AddResetButton: 0
---- !u!114 &2992164003499654213
+    InitialTempControlValue: 0.5
+    InitialSaturationControlValue: 0.5
+    InitialMonochromeControlValue: 0
+    MonochromeAdditiveLightingValue: 0
+    DefaultMonochromeLightingValue: 0
+    DefaultMonochromeAdditiveLightingValue: 0
+    InitialUnlitControlValue: 0
+    IsSeparateLightControl: 0
+    IsSeparateMonochromeControl: 0
+    IsGroupingAdditionalControls: 0
+  Excludes: []
+  WriteDefaults: 0
+--- !u!114 &4319319904297035284
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9213525711835462960}
+  m_GameObject: {fileID: 8898774349419501940}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
