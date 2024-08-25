@@ -232,7 +232,7 @@ namespace moe.noridev
         {
             if (_titleCache == null)
             {
-                _titleCache = new GUIContent($"{LightLimitChanger.Title} {GetVersion()}");
+                _titleCache = new GUIContent($"{LightLimitChanger.Title} {GetVersion()} | NoriDev");
             }
             EditorGUILayout.LabelField(_titleCache, new GUIStyle(EditorStyles.label) { fontStyle = FontStyle.Bold, fontSize = 15});
             var changeLog = new GUIContent(Localization.G("label.changelog"));
