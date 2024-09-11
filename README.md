@@ -12,7 +12,8 @@ MAで使用できるPrefab形式で生成するため、非破壊かつアバタ
 https://azukimochi.github.io/LLC-Docs/
 
 ### VCC向けリポジトリ
-https://vpm.noridev.moe/
+https://vpm.noridev.moe/<br>
+[![Add to VCC](https://img.shields.io/badge/-Add%20to%20VCC-%232baac1?style=for-the-badge)](https://vpm.noridev.moe/)
 
 #### 使い方
 https://azukimochi.github.io/LLC-Docs/docs/howtouse/howtouse-basic/
