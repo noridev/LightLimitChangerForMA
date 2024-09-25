@@ -14,7 +14,7 @@
      "Assets/LightLimitChangerForMA" : "d16480667da21494ebcd863403b37688"
   },
   "documentationUrl": "https://azukimochi.github.io/LLC-Docs/",
-  "changelogUrl": "https://azukimochi.github.io/LLC-Docs/docs/changelog",
+  "changelogUrl": "https://github.com/noridev/LightLimitChangerForMA/blob/main/CHANGELOG_NRDV.md",
   "vpmDependencies" : {
     "com.vrchat.avatars" : ">=3.2.0",
     "nadena.dev.modular-avatar" : "^1.9.9",
