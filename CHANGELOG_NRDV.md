@@ -33,3 +33,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changes
 - Add: 한국어(ko-KR) 지원
+
+---
+
+## [1.0.0] - 2024-08-24
+기반 LightLimitChanger 버전: <b>1.13.2</b>
+
+### Added
+- Feat: Monochrome과 Monochrome Additive 설정을 분리하도록 변경(Poiyomi 전용)
+
+### Changes
+- LLC가 비활성화 상태일 때 Monochrome 값을 머티리얼의 기본값으로 설정
