@@ -113,5 +113,11 @@ namespace moe.noridev
             monochromeAdditive = 1;
             return false;
         }
+
+        public virtual bool TryGetShadowEnvStrengthValue(Material material, out float shadowEnvStrength)
+        {
+            shadowEnvStrength = 0;
+            return false;
+        }
     }
 }

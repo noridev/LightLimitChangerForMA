@@ -30,6 +30,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.x.x] - 2024-x-x
 기반 LightLimitChanger 버전: <b>1.x.x</b>
 
+### Added
+- 그림자 조정 기능 추가
+  - 환경광에 의한 그림자 색을 조정할 수 있음
+
 ### Changed
 - Poiyomi Toon 셰이더 업데이트 (<small>9.0.56</small> -> 9.0.61)
 

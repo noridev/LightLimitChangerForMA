@@ -41,6 +41,9 @@ namespace moe.noridev
             if (parameters.AllowSaturationControl)
                 yield return Parameter<float>(Passes.ParameterName_Saturation);
 
+            if (parameters.AllowShadowControl)
+                yield return Parameter<float>(Passes.ParameterName_ShadowEnvStrength);
+
             if (parameters.AllowMonochromeControl)
             {
                 yield return Parameter<float>(Passes.ParameterName_Monochrome);

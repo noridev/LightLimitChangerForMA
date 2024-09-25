@@ -41,6 +41,7 @@ namespace moe.noridev
         internal const string ParameterName_Reset = "LightLimitReset";
         internal const string ParameterName_Monochrome = "LightLimitMonochrome";
         internal const string ParameterName_MonochromeAdditive = "LightLimitMonochromeAdditive";
+        internal const string ParameterName_ShadowEnvStrength = "LightLimitShadowEnvStrength";
 
         private static Session GetSession(BuildContext context)
         {
@@ -161,6 +162,12 @@ namespace moe.noridev
                 {
                     targetControl |= LightLimitControlType.Emission;
                     controls.Add(ControlAnimationContainer.Create(LightLimitControlType.Emission, Localization.S("ExpressionMenu.emission"), "Emission", ParameterName_Emission, 1.0f, Icons.Emission, defaultAnimation));
+                }
+
+                if (parameters.AllowShadowControl)
+                {
+                    targetControl |= LightLimitControlType.ShadowEnvStrength;
+                    controls.Add(ControlAnimationContainer.Create(LightLimitControlType.ShadowEnvStrength, Localization.S("ExpressionMenu.shadow_env_strength"),  "Shadow Environment Strength", ParameterName_ShadowEnvStrength, parameters.ShadowEnvStrengthValue, Icons.Unlit, defaultAnimation));
                 }
 
 
