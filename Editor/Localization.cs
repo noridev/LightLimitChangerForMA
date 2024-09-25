@@ -206,6 +206,16 @@ namespace moe.noridev
                 }
             },
             {
+                "label.allow_shadow", new []
+                {
+                    "Enable Unlit Control",
+                    "影調整を有効にする",
+                    "啟用陰影控制",
+                    "启用陰影控制",
+                    "그림자 조정 활성화"
+                }
+            },
+            {
                 "label.allow_monochrome", new []
                 {
                     "Enable Monochrome Control",
@@ -373,6 +383,16 @@ namespace moe.noridev
                     "飽和度",
                     "饱和度",
                     "채도"
+                }
+            },
+            {
+                "label.shadow_env_strength", new []
+                {
+                    "Shadow Environment Strength",
+                    "環境光",
+                    "環境迷",
+                    "环境迷",
+                    "환경광에 의한 그림자 색"
                 }
             },
             {
@@ -638,6 +658,16 @@ namespace moe.noridev
                     "啟用飽和度調整功能",
                     "启用饱和度调整功能",
                     "채도 조정 기능을 활성화할 수 있습니다"
+                }
+            },
+            {
+                "tip.allow_shadow", new []
+                {
+                    "Enables shadow adjustment functionality",
+                    "影の調整機能を有効化することができます",
+                    "啟用陰影度調整功能",
+                    "启用陰影度调整功能",
+                    "그림자 조정 기능을 활성화할 수 있습니다"
                 }
             },
             {
@@ -985,6 +1015,16 @@ Please check your settings if this is not what you intended.",
                     "飽和度",
                     "饱和度",
                     "채도"
+                }
+            },
+            {
+                "ExpressionMenu.shadow_env_strength", new []
+                {
+                    "Shadow Env Strength",
+                    "環境光",
+                    "環境迷",
+                    "环境迷",
+                    "환경광"
                 }
             },
             {

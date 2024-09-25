@@ -13,6 +13,7 @@ namespace moe.noridev
             public const string _LightingMinLightBrightness = "_LightingMinLightBrightness";
             public const string _LightingCap = "_LightingCap";
             public const string _LightingAdditiveLimit = "_LightingAdditiveLimit";
+            public const string _LightingIgnoreAmbientColor = "_LightingIgnoreAmbientColor";
             public const string _MainColorAdjustToggle = "_MainColorAdjustToggle";
             public const string _Saturation = "_Saturation";
             public const string _MonochromeLighting = "_LightingMonochromatic";
@@ -31,6 +32,7 @@ namespace moe.noridev
                 public static readonly int LightingMinLightBrightness = Shader.PropertyToID(_LightingMinLightBrightness);
                 public static readonly int LightingCap = Shader.PropertyToID(_LightingCap);
                 public static readonly int LightingAdditiveLimit = Shader.PropertyToID(_LightingAdditiveLimit);
+                public static readonly int LightingIgnoreAmbientColor = Shader.PropertyToID(_LightingIgnoreAmbientColor);
                 public static readonly int MainColorAdjustToggle = Shader.PropertyToID(_MainColorAdjustToggle);
                 public static readonly int Saturation = Shader.PropertyToID(_Saturation);
                 public static readonly int Color = Shader.PropertyToID(_Color);
@@ -51,6 +53,7 @@ namespace moe.noridev
                 public static readonly Color Color = Color.white;
                 public static readonly float MonochromeLighting = 0;
                 public static readonly float MonoChromeAdditiveLighting = 0;
+                public static readonly float LightingIgnoreAmbientColor = 0;
             }
 
             private const string Animated_Suffix = "Animated";
@@ -194,6 +197,7 @@ namespace moe.noridev
                     container.Default.SetParameterAnimation(parameters, _DissolveTextureColor, DefaultParameters.Color);
                     container.Control.SetColorTempertureAnimation(parameters, _DissolveTextureColor, DefaultParameters.Color);
                 }
+
                 if (container.ControlType.HasFlag(LightLimitControlType.Monochrome))
                 {
                     container.Default.SetParameterAnimation(parameters, _MonochromeLighting, parameters.DefaultMonochromeLightingValue);
@@ -205,11 +209,18 @@ namespace moe.noridev
                         container.Control.SetParameterAnimation(parameters, _MonoChromeAdditiveLighting, 0, 1);
                     }
                 }
+
                 if (container.ControlType.HasFlag(LightLimitControlType.MonochromeAdditive))
                 {
                     container.Default.SetParameterAnimation(parameters, _MonoChromeAdditiveLighting, parameters.DefaultMonochromeAdditiveLightingValue);
                     container.Control.SetParameterAnimation(parameters, _MonoChromeAdditiveLighting, 0, 1);
                 }
+
+                 if (container.ControlType.HasFlag(LightLimitControlType.ShadowEnvStrength))
+                 {
+                    container.Default.SetParameterAnimation(parameters, _LightingIgnoreAmbientColor, parameters.DefaultShadowEnvStrengthValue);
+                    container.Control.SetParameterAnimation(parameters, _LightingIgnoreAmbientColor, 0, 1);
+                 }
             }
 
             public override void AdditionalControl(Material material, in LightLimitChangerParameters parameters)
@@ -254,6 +265,12 @@ namespace moe.noridev
             {
                 monochrome = material.GetOrDefault(PropertyIDs.MonochromeLighting, DefaultParameters.MonochromeLighting);
                 monochromeAdditive = material.GetOrDefault(PropertyIDs.MonoChromeAdditiveLighting, DefaultParameters.MonoChromeAdditiveLighting);
+                return true;
+            }
+
+            public override bool TryGetShadowEnvStrengthValue(Material material, out float shadowEnvStrength)
+            {
+                shadowEnvStrength = material.GetOrDefault(PropertyIDs.LightingIgnoreAmbientColor, DefaultParameters.LightingIgnoreAmbientColor);
                 return true;
             }
         }

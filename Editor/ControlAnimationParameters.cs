@@ -13,8 +13,9 @@ namespace moe.noridev
         public readonly float DefaultMaxLightValue;
         public readonly float DefaultMonochromeLightingValue;
         public readonly float DefaultMonochromeAdditiveLightingValue;
+        public readonly float DefaultShadowEnvStrengthValue;
 
-        public ControlAnimationParameters(string targetPath, Type targetType, float minLightValue, float maxLightValue, float defaultMinLightValue, float defaultMaxLightValue, float defaultMonochromeLightingValue, float defaultMonochromeAdditiveLightingValue)
+        public ControlAnimationParameters(string targetPath, Type targetType, float minLightValue, float maxLightValue, float defaultMinLightValue, float defaultMaxLightValue, float defaultMonochromeLightingValue, float defaultMonochromeAdditiveLightingValue, float defaultShadowEnvStrengthValue)
         {
             TargetPath = targetPath;
             TargetType = targetType;
@@ -24,6 +25,7 @@ namespace moe.noridev
             DefaultMaxLightValue = defaultMaxLightValue;
             DefaultMonochromeLightingValue = defaultMonochromeLightingValue;
             DefaultMonochromeAdditiveLightingValue = defaultMonochromeAdditiveLightingValue;
+            DefaultShadowEnvStrengthValue = defaultShadowEnvStrengthValue;
         }
     }
 }

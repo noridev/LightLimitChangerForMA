@@ -26,6 +26,7 @@ namespace moe.noridev
             public const string _MonochromeLighting = "_MonochromeLighting";
             public const string _EmissionBlend = "_EmissionBlend";
             public const string _Emission2ndBlend = "_Emission2ndBlend";
+            public const string _ShadowEnvStrength = "_ShadowEnvStrength";
 
             private static class PropertyIDs
             {
@@ -43,6 +44,7 @@ namespace moe.noridev
                 public static readonly int MainGradationStrength = Shader.PropertyToID(_MainGradationStrength);
                 public static readonly int MainColorAdjustMask = Shader.PropertyToID(_MainColorAdjustMask);
                 public static readonly int MonochromeLighting = Shader.PropertyToID(_MonochromeLighting);
+                public static readonly int ShadowEnvStrength = Shader.PropertyToID(_ShadowEnvStrength);
             }
 
             private static class DefaultParameters
@@ -55,6 +57,7 @@ namespace moe.noridev
                 public static readonly Vector4 MainTexHSVG = new Vector4(0, 1, 1, 1);
                 public static readonly float MainGradationStrength = 0;
                 public static readonly float MonochromeLighting = 0;
+                public static readonly float ShadowEnvStrength = 0;
             }
 
             public override bool TryNormalizeMaterial(Material material, LightLimitChangerObjectCache cache)
@@ -231,6 +234,12 @@ namespace moe.noridev
                     container.Control.SetColorTempertureAnimation(parameters, _Color3rd);
                 }
 
+                if (container.ControlType.HasFlag(LightLimitControlType.ShadowEnvStrength))
+                {
+                    container.Default.SetParameterAnimation(parameters, _ShadowEnvStrength, parameters.DefaultShadowEnvStrengthValue);
+                    container.Control.SetParameterAnimation(parameters, _ShadowEnvStrength, 0, 1);
+                }
+
             }
 
             public override bool TryGetLightMinMaxValue(Material material, out float min, out float max)
@@ -244,6 +253,12 @@ namespace moe.noridev
             {
                 monochrome = material.GetOrDefault(PropertyIDs.MonochromeLighting, DefaultParameters.MonochromeLighting);
                 monochromeAdditive = 1;
+                return true;
+            }
+
+            public override bool TryGetShadowEnvStrengthValue(Material material, out float shadowEnvStrength)
+            {
+                shadowEnvStrength = material.GetOrDefault(PropertyIDs.ShadowEnvStrength, DefaultParameters.ShadowEnvStrength);
                 return true;
             }
         }

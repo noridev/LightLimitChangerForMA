@@ -38,12 +38,13 @@ namespace moe.noridev
                         var min = parameters.MinLightValue;
                         var max = parameters.MaxLightValue;
 
-                        float defaultMinLight, defaultMaxLight, defaultMonochromeLighting, defaultMonochromeAdditiveLighting;
+                        float defaultMinLight, defaultMaxLight, defaultMonochromeLighting, defaultMonochromeAdditiveLighting, defaultShadowEnvStrength;
                         if (!parameters.OverwriteDefaultLightMinMax &&
                             renderer.sharedMaterial is Material mat &&
                             x.IsTargetShader(mat?.shader) &&
                             x.TryGetLightMinMaxValue(mat, out defaultMinLight, out defaultMaxLight) &&
-                            x.TryGetMonochromeValue(mat, out defaultMonochromeLighting, out defaultMonochromeAdditiveLighting))
+                            x.TryGetMonochromeValue(mat, out defaultMonochromeLighting, out defaultMonochromeAdditiveLighting) &&
+                            x.TryGetShadowEnvStrengthValue(mat, out defaultShadowEnvStrength))
                         {
                             // OverwriteDefaultLightMinMax disabled.
                             // Now we get defaultMinLight and defaultMaxLight from first material slot.
@@ -52,6 +53,7 @@ namespace moe.noridev
                         {
                             defaultMonochromeLighting = parameters.InitialMonochromeControlValue;
                             defaultMonochromeAdditiveLighting = parameters.MonochromeAdditiveLightingValue;
+                            defaultShadowEnvStrength = parameters.ShadowEnvStrengthValue;
 
                             if (parameters.IsSeparateLightControl)
                             {
@@ -67,7 +69,7 @@ namespace moe.noridev
                             }
                         }
 
-                        var param = new ControlAnimationParameters(relativePath, type, min, max, defaultMinLight, defaultMaxLight, defaultMonochromeLighting, defaultMonochromeAdditiveLighting);
+                        var param = new ControlAnimationParameters(relativePath, type, min, max, defaultMinLight, defaultMaxLight, defaultMonochromeLighting, defaultMonochromeAdditiveLighting, defaultShadowEnvStrength);
                         foreach (ref readonly var container in animationContainers)
                         {
                             x.SetControlAnimation(container, param, parameters);

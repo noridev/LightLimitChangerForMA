@@ -31,6 +31,7 @@ namespace moe.noridev
 
         public bool AllowColorTempControl = false;
         public bool AllowSaturationControl = false;
+        public bool AllowShadowControl = false;
         public bool AllowMonochromeControl = false;
         public bool AllowUnlitControl = false;
         public bool AllowEmissionControl = false;
@@ -56,6 +57,12 @@ namespace moe.noridev
         
         [Range(0,1)]
         public float InitialUnlitControlValue = 0.0f;
+
+        [Range(0,1)]
+        public float ShadowEnvStrengthValue = 0.0f;
+
+        [Range(0,1)]
+        public float DefaultShadowEnvStrengthValue = 0.0f;
         
         public bool IsSeparateLightControl = false;
         public bool IsSeparateMonochromeControl = false;

@@ -22,6 +22,7 @@ namespace moe.noridev
         private SerializedProperty AllowMonochromeControl;
         private SerializedProperty AllowUnlitControl;
         private SerializedProperty AllowEmissionControl;
+        private SerializedProperty AllowShadowControl;
         private SerializedProperty InitialTempControlValue;
         private SerializedProperty InitialSaturationControlValue;
         private SerializedProperty InitialMonochromeControlValue;
@@ -33,6 +34,7 @@ namespace moe.noridev
         private SerializedProperty Excludes;
         private SerializedProperty WriteDefaults;
         private SerializedProperty MonochromeAdditiveLightingValue;
+        private SerializedProperty ShadowEnvStrengthValue;
 
         private static bool _isOptionFoldoutOpen = true;
         private static bool _isCepareteInitValFoldoutOpen = false;
@@ -59,6 +61,7 @@ namespace moe.noridev
             AllowMonochromeControl = parameters.FindPropertyRelative(nameof(LightLimitChangerParameters.AllowMonochromeControl));
             AllowUnlitControl = parameters.FindPropertyRelative(nameof(LightLimitChangerParameters.AllowUnlitControl));
             AllowEmissionControl = parameters.FindPropertyRelative(nameof(LightLimitChangerParameters.AllowEmissionControl));
+            AllowShadowControl = parameters.FindPropertyRelative(nameof(LightLimitChangerParameters.AllowShadowControl));
             InitialTempControlValue = parameters.FindPropertyRelative(nameof(LightLimitChangerParameters.InitialTempControlValue));
             InitialSaturationControlValue = parameters.FindPropertyRelative(nameof(LightLimitChangerParameters.InitialSaturationControlValue));
             InitialMonochromeControlValue = parameters.FindPropertyRelative(nameof(LightLimitChangerParameters.InitialMonochromeControlValue));
@@ -70,6 +73,7 @@ namespace moe.noridev
             Excludes = serializedObject.FindProperty(nameof(LightLimitChangerSettings.Excludes));
             WriteDefaults = serializedObject.FindProperty(nameof(LightLimitChangerSettings.WriteDefaults));
             MonochromeAdditiveLightingValue = parameters.FindPropertyRelative(nameof(LightLimitChangerParameters.MonochromeAdditiveLightingValue));
+            ShadowEnvStrengthValue = parameters.FindPropertyRelative(nameof(LightLimitChangerParameters.ShadowEnvStrengthValue));
         }
 
         public override void OnInspectorGUI()
@@ -159,6 +163,8 @@ namespace moe.noridev
                         Localization.G("label.allow_color_tmp", "tip.allow_color_tmp"));
                     EditorGUILayout.PropertyField(AllowSaturationControl,
                         Localization.G("label.allow_saturation", "tip.allow_saturation"));
+                    EditorGUILayout.PropertyField(AllowShadowControl,
+                        Localization.G("label.allow_shadow", "tip.allow_shadow"));
                     EditorGUILayout.PropertyField(AllowMonochromeControl,
                         Localization.G("label.allow_monochrome", "tip.allow_monochrome"));
                     EditorGUI.BeginDisabledGroup(AllowMonochromeControl.boolValue == false);
@@ -194,7 +200,14 @@ namespace moe.noridev
                         EditorGUI.BeginDisabledGroup(AllowSaturationControl.boolValue == false);
                         EditorGUILayout.PropertyField(InitialSaturationControlValue, Localization.G(""));
                         EditorGUI.EndDisabledGroup();
-
+                    }
+                    using (new EditorGUILayout.HorizontalScope())
+                    {
+                        EditorGUILayout.Space(10);
+                        EditorGUILayout.LabelField(Localization.G("label.shadow_env_strength"), GUILayout.MaxWidth(70.0f), GUILayout.ExpandWidth(false));
+                        EditorGUI.BeginDisabledGroup(AllowShadowControl.boolValue == false);
+                        EditorGUILayout.PropertyField(ShadowEnvStrengthValue, Localization.G(""));
+                        EditorGUI.EndDisabledGroup();
                     }
                     using (new EditorGUILayout.HorizontalScope())
                     {
@@ -204,7 +217,6 @@ namespace moe.noridev
                         EditorGUILayout.PropertyField(InitialMonochromeControlValue, Localization.G(""));
                         EditorGUI.EndDisabledGroup();
                     }
-
                     using (new EditorGUILayout.HorizontalScope())
                     {
                         EditorGUILayout.Space(10);

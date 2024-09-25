@@ -14,7 +14,8 @@ namespace moe.noridev
         Monochrome = 1 << 6,
         MonochromeAdditive = 1 << 7,
         Emission = 1 << 8,
+        ShadowEnvStrength = 1 << 9,
 
-        AdditionalControls = Saturation | Unlit | ColorTemperature | Monochrome | MonochromeAdditive | Emission,
+        AdditionalControls = Saturation | Unlit | ColorTemperature | Monochrome | MonochromeAdditive | Emission | ShadowEnvStrength,
     }
 }
