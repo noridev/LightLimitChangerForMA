@@ -27,8 +27,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -->
 
-## [1.x.x] - 2024-x-x
-기반 LightLimitChanger 버전: <b>1.x.x</b>
+## [1.1.0] - 2024-09-25
+기반 LightLimitChanger 버전: <b>1.14.0</b>
 
 ### Added
 - 그림자 조정 기능 추가
