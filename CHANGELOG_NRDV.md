@@ -31,6 +31,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 기반 LightLimitChanger 버전: <b>1.14.1</b>
 
 ### Changed
+- 기반 LightLimitChanger 버전 업데이트 (<small>1.14.0</small> -> 1.14.1)
 - Enhance: 한국어 번역 개선
 
 ---
@@ -49,6 +50,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.0.4] - 2024-09-03
 기반 LightLimitChanger 버전: <b>1.14.0</b>
+
+### Changed
+- 기반 LightLimitChanger 버전 업데이트 (<small>1.13.2</small> -> 1.14.0)
 
 ---
 
