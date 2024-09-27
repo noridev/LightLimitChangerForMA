@@ -18,6 +18,7 @@ namespace moe.noridev
                 .Run(CollectTargetRenderers).Then
                 .Run(CloningMaterials).Then
                 .Run(NormalizeMaterials).Then
+                .Run(CheckMixedShadersPass.Instance).Then
                 .Run(GenerateAdditionalControl).Then
                 .Run(GenerateAnimations).Then
                 .Run(Finalize);
