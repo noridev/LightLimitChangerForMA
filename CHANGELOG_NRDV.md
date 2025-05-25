@@ -27,8 +27,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -->
 
-## [1.x.x] - 2025-x-x
-기반 LightLimitChanger 버전: <b>1.x.x</b>
+## [1.1.5] - 2025-05-25
+기반 LightLimitChanger 버전: <b>1.14.4</b>
 
 ### Changed
 - Poiyomi Toon 셰이더 업데이트 (<small>9.1.20</small> -> **9.2.41**)
